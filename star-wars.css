@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(72deg, rgba(56,149,60,1) 0%, rgba(66,140,241,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.box {
+    width: 30rem;
+    height: 20rem;
+    background-color: #ffcccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px #665151;
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    max-width: 20rem;
+    height: 430px;
+    position: absolute;
+    left: 50%;
+    top: -20rem;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px #665151;
+}
+
+#name {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.attributes {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    padding-right: 15%;
+    border-right: 4px double green;
+    border-radius: 30%; 
+}
+
+.values {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    padding-left: 15%;
+    border-left: 4px double darkslateblue;
+    border-radius: 30%;
+}
+
+.attributes p, .values p {
+    margin: 1rem;
+}
+
+.values p:first-child {
+    width: 76px; 
+}
+
+p:last-child {
+    margin-bottom: 0; 
+}
+
+p:first-child {
+    margin-top: 0; 
+}
+
+button {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(199deg, rgba(255,255,255,1) 0%, rgba(66,140,241,1) 100%); 
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px #665151;
+    transition: font-size .15s, box-shadow .15s;
+}
+
+button:hover {
+    font-size: 2.2rem;
+    box-shadow: 0px 0px 45px #665151;
+    background: linear-gradient(38deg, rgba(255,255,255,1) 0%, rgba(66,140,241,1) 100%); 
+}
+
+@media (max-height: 810px) {
+    .box {
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-height: 740px) {
+    img {
+        height: 340px;
+        top: -15rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
